@@ -1,0 +1,17 @@
+<view>
+  
+  <!-- 热门歌单 -->
+  <view class='musi_list'>
+
+    <view class='music' wx:for="{{songList}}" wx:key="index" bindtap='songClick' data-id="{{item.id}}">
+      <image src='{{item.coverImgUrl}}'></image>
+      <view class='music_text'>
+        <view class='title'>{{item.title}}</view>
+        <view class='creator'>{{item.creator}}</view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

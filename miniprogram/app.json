@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/songList/songList",
+    "pages/search/search",
+    "pages/hotSongList/hotSongList"
+   
+  ],
+  "window": {
+    "backgroundColor": "#FF3300",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF3300",
+    "navigationBarTitleText": "石头开了花",
+    "navigationBarTextStyle": "black"
+  },
+ "tabBar": {
+  "color": "#ffffff",
+  "selectedColor": "#ffffff",
+  "borderStyle": "black",
+  "backgroundColor":"#FF3300",
+  "position":"top",
+  "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/hotSongList/hotSongList",
+        "text": "歌单"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

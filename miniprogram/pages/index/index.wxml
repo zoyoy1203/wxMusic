@@ -1,0 +1,40 @@
+<view>
+  <view class='header'>
+    <swiper 
+      vertical="{{false}}"
+      indicator-dots="true" 
+      autoplay="true" 
+      interval="5000">
+        <block wx:for="{{imgList}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}"/>
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>
+
+  <view class='highQualityMusics'>
+    <view class='musicsTitle'>
+    精品歌单》
+    </view>
+    <view class='musicsContent'>
+      <view class='music' wx:for="{{highQualityMusics}}" wx:key="index">
+        <image src='{{item.coverImgUrl}}'></image>
+        <view class='music_title'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='mvList'>
+    <view class='musicsTitle'>
+    MV排行榜》
+    </view>
+    <view class='musicsContent'>
+      <view class='music' wx:for="{{mvList}}" wx:key="index">
+        <image src='{{item.cover}}'></image>
+        <view class='music_title'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+ 
+</view>
